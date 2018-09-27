@@ -1,25 +1,36 @@
 {
-  "name": "Nexter",
+  "name": "starter-project",
   "version": "1.0.0",
-  "description": "Nexter webpage",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --browser=firefox",
-    "start": "npm-run-all --parallel devserver watch:sass",
-
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yassine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinovic/starter-project.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinovic/starter-project/issues"
+  },
+  "homepage": "https://github.com/sinovic/starter-project#readme",
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.3",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-noop": "^1.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-assets": "^5.0.0",
+    "usedcss": "^1.0.7"
+  },
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "browser-sync": "^2.24.7"
   }
 }
